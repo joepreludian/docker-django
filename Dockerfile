@@ -4,7 +4,7 @@ MAINTAINER Jonhnatha Trigueiro <joepreludian@gmail.com>
 ENV PROJECT_MAIN_MODULE 'neoratts'
 
 RUN mkdir /app
-ADD . /app
+ADD app /app
 
 WORKDIR /app
 
