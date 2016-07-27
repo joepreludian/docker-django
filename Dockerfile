@@ -1,10 +1,11 @@
 FROM joepreludian/django-supervisor-nginx:latest
 MAINTAINER Jonhnatha Trigueiro <joepreludian@gmail.com>
 
-ENV PROJECT_MAIN_MODULE 'neoratts'
+ENV PROJECT_MAIN_MODULE 'prelude'
 
 RUN mkdir /app
 ADD app /app
+ADD ops /app
 
 WORKDIR /app
 
